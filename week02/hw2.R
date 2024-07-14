@@ -6,4 +6,5 @@ df1=data.frame(Name=c('James','Paul','Richards','Marico','Samantha','Ravi','Ragh
 aggregate(df1$Sales, by=list(df1$State), FUN=sum)
 
 library(dplyr)
+df1
 df1 %>% group_by(State) %>% summarise(sum_sales = sum(Sales))
